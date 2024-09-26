@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>SuperHealing</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Super Healing</label>
+                <description> {PAWN_nameDef} recovers rapidly from injuries and illnesses.</description>
+                <statOffsets>
+                    <InjuryHealingFactor>100.0</InjuryHealingFactor>
+                    <PainShockThreshold>.99</PainShockThreshold>
+                    <ImmunityGainSpeed>5.0</ImmunityGainSpeed>
+                    <ToxicResistance>1.0</ToxicResistance>
+                </statOffsets>
+            </li>
+        </degreeDatas>    
+    </TraitDef>
+
+    <TraitDef>
+        <defName>AllStar</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>All Star</label>
+                <description>What can they say? {PAWN_nameDef} just excels at everything they try.</description>
+                <skillGains>
+                    <Shooting>20</Shooting>
+                    <Melee>20</Melee>
+                    <Construction>20</Construction>
+                    <Mining>20</Mining>
+                    <Cooking>20</Cooking>
+                    <Plants>20</Plants>
+                    <Animals>20</Animals>
+                    <Crafting>20</Crafting>
+                    <Artistic>20</Artistic>
+                    <Medicine>20</Medicine>
+                    <Social>20</Social>
+                    <Intellectual>20</Intellectual>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ManOfSteel</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Man of Steel</label>
+                <description> {PAWN_nameDef}'s body seems to be made of plasteel. Almost nothing can break it!</description>
+                <statOffsets>
+                    <IncomingDamageFactor>.0001</IncomingDamageFactor>
+                    <ArmorRating_Sharp>2</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>2</ArmorRating_Blunt>
+                    <ArmorRating_Heat>2</ArmorRating_Heat>                    
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>WorkHorse</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Work Horse</label>
+                <description> {PAWN_nameDef} loves working and accomplishes tasks much faster than others.</description>
+                <statOffsets>
+                    <WorkSpeedGlobal>5</WorkSpeedGlobal>
+                    <MoveSpeed>6</MoveSpeed>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>GodOfWar</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>God of War</label>
+                <description> {PAWN_nameDef} is unparalled destruction. Wherever they enter the battlefield, death follows.</description>
+                <statOffsets>
+                    <ShootingAccuracyPawn>200</ShootingAccuracyPawn>
+                    <RangedCooldownFactor>.05</RangedCooldownFactor>
+                    <MeleeHitChance>100</MeleeHitChance>
+                    <MeleeDamageFactor>50</MeleeDamageFactor>
+                    <MeleeCooldownFactor>.05</MeleeCooldownFactor>
+                    <MeleeDodgeChance>500</MeleeDodgeChance>
+                </statOffsets>
+                <skillGains>
+                    <Shooting>20</Shooting>
+                    <Melee>20</Melee>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Braniac</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Braniac</label>
+                <description> {PAWN_nameDef}'s mind functions at a level beyond common understanding.</description>
+                <skillGains>
+                    <Intellectual>20</Intellectual>
+                    <Medicine>20</Medicine>
+                </skillGains>
+                <statOffsets>
+                    <ResearchSpeed>5</ResearchSpeed>
+                    <ReadingSpeed>5</ReadingSpeed>
+                </statOffsets>
+            
+            </li>
+        
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>AnimalWhisperer</defName>
+        <commonality>.001</commonality>
+        <degreeDatas>
+            <li>
+                <label>Animal Whisperer</label>
+                <description>It is rumored that {PAWN_nameDef} can literally talk to animals. They can successfully tame or train any animal.</description>
+                <statOffsets>
+					<TameAnimalChance>100</TameAnimalChance>
+					<TrainAnimalChance>100</TrainAnimalChance>
+					<BondAnimalChanceFactor>1</BondAnimalChanceFactor>
+                    <HuntingStealth>100</HuntingStealth>
+                </statOffsets>
+                <skillGains>
+                    <Animals>20</Animals>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Weatherproof</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Weatherproof</label>
+                <description> {PAWN_nameDef}'s body can withstand extreme temperatures.</description>
+                <statOffsets>
+                    <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>250</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>SocialIcon</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Social Icon</label>
+                <description> {PAWN_nameDef}'s charm and beauty is known across the Cosmos.</description>
+                <statOffsets>
+                    <PawnBeauty>30</PawnBeauty>
+                    <SocialImpact>100</SocialImpact>
+                    <NegotiationAbility>100</NegotiationAbility>
+                    <TradePriceImprovement>10</TradePriceImprovement>
+                    <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">10</ConversionPower>
+                    <SlaveSuppressionFallRate>0</SlaveSuppressionFallRate>
+                    <ArrestSuccessChance>1</ArrestSuccessChance>                 
+                </statOffsets>
+                <skillGains>
+                    <Social>20</Social>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>SeedOfLife</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Seed of Life</label>
+                <description> Whether it's plants, animals, or people, {PAWN_nameDef} protects and nurtures all life.</description>
+                <statOffsets>
+                    <MedicalTendSpeed>5</MedicalTendSpeed>
+                    <MedicalTendQuality>10</MedicalTendQuality>
+                    <MedicalSurgerySuccessChance>10</MedicalSurgerySuccessChance>
+                </statOffsets>
+                <skillGains>
+                    <Medicine>20</Medicine>
+                    <Plants>20</Plants>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Ascended</defName>
+        <commonality>0</commonality>     
+        <degreeDatas>
+            <li>
+                <label>Ascended</label>
+                <description>{PAWN_nameDef} has been blessed by the Gods with unmatched strength and skill.</description>
+                <statOffsets>
+                    <MoveSpeed>9</MoveSpeed>
+                    <WorkSpeedGlobal>10</WorkSpeedGlobal>
+                    <ResearchSpeed>5</ResearchSpeed>
+                    <MedicalTendQuality>10</MedicalTendQuality>
+                    <TameAnimalChance>5</TameAnimalChance>
+                    <TrainAnimalChance>1</TrainAnimalChance>
+                    <HuntingStealth>100</HuntingStealth>
+                    <PawnBeauty>30</PawnBeauty>
+                    <SocialImpact>100</SocialImpact>
+                    <NegotiationAbility>100</NegotiationAbility>
+                    <TradePriceImprovement>10</TradePriceImprovement>
+                    <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">10</ConversionPower>
+                    <ShootingAccuracyPawn>200</ShootingAccuracyPawn>
+                    <RangedCooldownFactor>.05</RangedCooldownFactor>
+                    <MeleeHitChance>100</MeleeHitChance>
+                    <MeleeDamageFactor>50</MeleeDamageFactor>
+                    <MeleeDodgeChance>500</MeleeDodgeChance>
+                    <IncomingDamageFactor>.0001</IncomingDamageFactor>
+                    <ArmorRating_Sharp>10</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>10</ArmorRating_Blunt>
+                    <ArmorRating_Heat>10</ArmorRating_Heat>    
+                    <InjuryHealingFactor>100.0</InjuryHealingFactor>
+                    <FoodPoisonChance>0</FoodPoisonChance>
+                    <ImmunityGainSpeed>5.0</ImmunityGainSpeed>
+                    <ToxicResistance>1.0</ToxicResistance>
+                    <CarryingCapacity>2000</CarryingCapacity>
+                    <IncomingDamageFactor>.001</IncomingDamageFactor>
+                </statOffsets>
+
+            </li>
+        
+        </degreeDatas>
+                    </TraitDef>
+
+
+</Defs>
